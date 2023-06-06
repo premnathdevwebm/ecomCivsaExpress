@@ -40,7 +40,7 @@ exports.postReq = function (body) {
   const accessCode = body.accesscode;
   encRequest = ccav.encrypt(buffData, workingKey);
   const formbody =
-    '<form id="nonseamless" method="post" name="redirect" action="https://test.ccavenue.com/transaction/transaction.do?command=initiateTransaction"/> <input type="hidden" id="encRequest" name="encRequest" value="' +
+    '<form id="nonseamless" method="post" name="redirect" action="https://secure.ccavenue.com/transaction/transaction.do?command=initiateTransaction"/> <input type="hidden" id="encRequest" name="encRequest" value="' +
     encRequest +
     '"><input type="hidden" name="access_code" id="access_code" value="' +
     accessCode +
